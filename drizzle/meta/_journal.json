@@ -15,6 +15,20 @@
       "when": 1709056459239,
       "tag": "0001_lush_taskmaster",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1709056740373,
+      "tag": "0002_yielding_drax",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1709056842325,
+      "tag": "0003_classy_kylun",
+      "breakpoints": true
     }
   ]
 }
