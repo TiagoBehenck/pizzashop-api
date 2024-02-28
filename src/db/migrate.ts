@@ -1,13 +1,18 @@
 import postgres from 'postgres'
+import chalk from 'chalk'
 import { drizzle } from 'drizzle-orm/postgres-js'
 import { migrate } from 'drizzle-orm/postgres-js/migrator'
 
-const connectionString = 'postgresql://docker:docker@localhost:5432/pizzashop'
+import { env } from '../env'
+
+const connectionString = env.DATABASE_URL
 
 const connection = postgres(connectionString, { max: 1 })
 const db = drizzle(connection);
 
 await migrate(db, { migrationsFolder: 'drizzle' });
+
+console.log(chalk.greenBright('Migrations applied successfully!'))
 
 await connection.end();
 
