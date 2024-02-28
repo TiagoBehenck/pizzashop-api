@@ -20,6 +20,7 @@
     "chalk": "^5.3.0",
     "drizzle-kit": "^0.20.14",
     "eslint": "^8.57.0",
+    "eslint-plugin-drizzle": "^0.2.3",
     "pg": "^8.11.3",
     "typescript": "^5.3.3"
   },
