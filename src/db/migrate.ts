@@ -8,12 +8,12 @@ import { env } from '../env'
 const connectionString = env.DATABASE_URL
 
 const connection = postgres(connectionString, { max: 1 })
-const db = drizzle(connection);
+const db = drizzle(connection)
 
-await migrate(db, { migrationsFolder: 'drizzle' });
+await migrate(db, { migrationsFolder: 'drizzle' })
 
 console.log(chalk.greenBright('Migrations applied successfully!'))
 
-await connection.end();
+await connection.end()
 
 process.exit()

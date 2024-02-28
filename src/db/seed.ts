@@ -19,16 +19,16 @@ console.log(chalk.yellow('✔︎ Databese reset!'))
  */
 
 await db.insert(users).values([
-    {
-        name: faker.person.fullName(),
-        email: faker.internet.email(),
-        role: 'customer'
-    },
-    {
-        name: faker.person.fullName(),
-        email: faker.internet.email(),
-        role: 'customer'
-    }
+  {
+    name: faker.person.fullName(),
+    email: faker.internet.email(),
+    role: 'customer',
+  },
+  {
+    name: faker.person.fullName(),
+    email: faker.internet.email(),
+    role: 'customer',
+  },
 ])
 
 console.log(chalk.yellow('✔︎ Created customers!'))
@@ -37,15 +37,18 @@ console.log(chalk.yellow('✔︎ Created customers!'))
  * Create manager
  */
 
-const [manager] = await db.insert(users).values([
+const [manager] = await db
+  .insert(users)
+  .values([
     {
-        name: faker.person.fullName(),
-        email: 'admin@admin.com',
-        role: 'manager'
+      name: faker.person.fullName(),
+      email: 'admin@admin.com',
+      role: 'manager',
     },
-]).returning({
-    id: users.id
-})
+  ])
+  .returning({
+    id: users.id,
+  })
 
 console.log(chalk.yellow('✔︎ Created manager!'))
 
@@ -54,11 +57,11 @@ console.log(chalk.yellow('✔︎ Created manager!'))
  */
 
 await db.insert(restaurants).values([
-    {
-        name: faker.company.name(),
-        description: faker.lorem.paragraph(),
-        managerId: manager.id
-    },
+  {
+    name: faker.company.name(),
+    description: faker.lorem.paragraph(),
+    managerId: manager.id,
+  },
 ])
 
 console.log(chalk.yellow('✔︎ Created restaurant!'))

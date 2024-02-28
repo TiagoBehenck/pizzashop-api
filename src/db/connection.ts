@@ -7,4 +7,4 @@ import { env } from '../env'
 const connectionString = env.DATABASE_URL
 
 const connection = postgres(connectionString)
-export const db = drizzle(connection, { schema });
+export const db = drizzle(connection, { schema })
