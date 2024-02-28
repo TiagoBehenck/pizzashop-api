@@ -10,6 +10,7 @@
     "migrate": "bun src/db/migrate.ts",
     "seed": "bun src/db/seed.ts",
     "studio": "drizzle-kit studio",
+    "lint": "eslint --fix src --ext ts",
     "test": "bun test"
   },
   "devDependencies": {
