@@ -1,0 +1,1 @@
+ALTER TABLE "auth-links" DROP COLUMN IF EXISTS "description";
