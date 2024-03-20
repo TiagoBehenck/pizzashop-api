@@ -2,7 +2,7 @@ import { createId } from '@paralleldrive/cuid2'
 import { pgTable, text, timestamp } from 'drizzle-orm/pg-core'
 import { users } from '.'
 
-export const authLinks = pgTable('auth-links', {
+export const authLinks = pgTable('auth_links', {
   id: text('id')
     .$defaultFn(() => createId())
     .primaryKey(),

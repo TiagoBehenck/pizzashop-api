@@ -5,43 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1709056240357,
-      "tag": "0000_wet_iron_lad",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1709056459239,
-      "tag": "0001_lush_taskmaster",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1709056740373,
-      "tag": "0002_yielding_drax",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1709056842325,
-      "tag": "0003_classy_kylun",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "5",
-      "when": 1709297539475,
-      "tag": "0004_loose_sharon_ventura",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "5",
-      "when": 1709667501249,
-      "tag": "0005_rainy_sugar_man",
+      "when": 1710954643826,
+      "tag": "0000_icy_alex_power",
       "breakpoints": true
     }
   ]

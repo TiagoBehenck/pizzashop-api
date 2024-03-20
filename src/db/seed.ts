@@ -1,6 +1,6 @@
 /* eslint-disable drizzle/enforce-delete-with-where */
 
-import { dv, faker } from '@faker-js/faker'
+import { faker } from '@faker-js/faker'
 import chalk from 'chalk'
 
 import {
@@ -10,7 +10,6 @@ import {
   orders,
   products,
   authLinks,
-  orders,
 } from './schema'
 import { db } from './connection'
 import { createId } from '@paralleldrive/cuid2'

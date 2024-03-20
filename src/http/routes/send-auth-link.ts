@@ -41,7 +41,7 @@ export const sendAuthLink = new Elysia().post(
       },
       to: email,
       subject: 'Authenticate to Pizza Shop',
-      text: `Use the following link to authicate on Pizza Shop: ${authLink.toString()},`,
+      text: `Use the following link to authicate on Pizza Shop: ${authLink.toString()}`,
     })
 
     console.log(nodemailer.getTestMessageUrl(info))
