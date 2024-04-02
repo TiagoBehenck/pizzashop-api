@@ -14,6 +14,7 @@ import { deliverOrder } from './routes/deliver-order'
 import { getOrders } from './routes/get-orders'
 import { getCurrentMonthRevenue } from './routes/get-current-month-revenue'
 import { getDayOrdersAmount } from './routes/get-day-orders-amount'
+import { getMonthOrdersAmount } from './routes/get-month-orders-amounth'
 
 const app = new Elysia()
   .use(registerRestaurant)
@@ -30,6 +31,7 @@ const app = new Elysia()
   .use(getOrders)
   .use(getCurrentMonthRevenue)
   .use(getDayOrdersAmount)
+  .use(getMonthOrdersAmount)
   .onError(({ code, set, error }) => {
     switch (code) {
       case 'VALIDATION': {
